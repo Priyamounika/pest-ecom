@@ -66,3 +66,11 @@ body {
   width: 100%;
   margin-bottom: 0.5rem;
 }
+
+.testi-bg
+  {
+    background-image: url("/public/Testi/testi-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
