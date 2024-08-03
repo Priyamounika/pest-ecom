@@ -1,12 +1,8 @@
-"use client";
-import { useRef, useEffect } from 'react';
+import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
-import 'tailwindcss/tailwind.css';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { Yeseva_One } from 'next/font/google';
 
-const TestimonialCard = () => {
+const test = () => {
     const categorySplide = useRef(null);
 
     const prevCategory = () => {
@@ -20,12 +16,10 @@ const TestimonialCard = () => {
           categorySplide.current.go("+1");
         }
       };
-
-    return (
-        <div className="relative container mx-auto py-8 bg-cover bg-center" style={{ backgroundImage: 'url(/Testi/testi-bg.png)' }}>
-            {/* Black overlay */}
-            <div className="absolute inset-0 bg-black/70"></div>
-            <div className="relative text-center mb-8">
+      
+  return (
+    <div className="">
+        <div className="text-center mb-8">
                 <div className="flex justify-center mb-4">
                     <div className="px-3 py-2 border w-fit rounded-full bg-white flex items-center justify-center gap-2">
                         <img src="/Testi/star.png" alt="star" className="w-[17px] h-[17px] object-cover" />
@@ -39,6 +33,7 @@ const TestimonialCard = () => {
                     Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
                 </p>
             </div>
+            {/* Card */}
             <Splide
                 ref={categorySplide}
                 options={{
@@ -70,9 +65,8 @@ const TestimonialCard = () => {
                     },
                 }}
             >
-                {/* Add your slides here */}
                 <SplideSlide>
-                    <div className="relative p-8 rounded shadow-md px-32">
+            <div className="relative p-8 rounded shadow-md px-32">
                         <div className="flex items-start">
                             <img src="/Testi/testi.png" alt="Jack Brown" className="w-[150px] h-[180px] mr-4 object-cover" />
                             <div className='py-4'>
@@ -91,30 +85,10 @@ const TestimonialCard = () => {
                             "Vitae tempus mattis gravida habitant nunc sociosqu fringilla pulvinar nisi cum suspendisse maecenas bibendum faucibus, per duis primis."
                         </p>
                     </div>
-                </SplideSlide>
-            </Splide>
+                    </SplideSlide>
+                    </Splide>
+    </div>
+  )
+}
 
-            {/* Buttons */}
-            <div className="mt-8 justify-center transform flex gap-4 z-20">
-                <div className="flex justify-center items-center">
-                    <button
-                        className="bg-white text-black rounded-full p-2 shadow-md hover:bg-gray-200"
-                        onClick={prevCategory}
-                    >
-                        <FaArrowLeft size={22} />
-                    </button>
-                </div>
-                <div className="flex justify-center items-center">
-                    <button
-                        className="bg-white text-black rounded-full p-2 shadow-md hover:bg-gray-200"
-                        onClick={nextCategory}
-                    >
-                        <FaArrowRight size={22} />
-                    </button>
-                </div>
-            </div>
-        </div>
-    );
-};
-
-export default TestimonialCard;
+export default test

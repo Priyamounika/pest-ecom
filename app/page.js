@@ -4,6 +4,8 @@ import Header from '@/app/layout/header'
 import Footer from '@/app/layout/footer'
 import ProductCard from '@/app/utility/component/product-card'
 import TestimonialCard from '@/app/utility/component/testimonial-card'
+import Test from '@/app/utility/component/test'
+
 
 export default function Home() {
   return (
@@ -17,7 +19,8 @@ export default function Home() {
       <ProductCard/>
       </div>
       {/* Testimonial cards */}
-      <TestimonialCard/>
+      {/* <TestimonialCard/> */}
+      <Test/>
       <Footer/>
     </main>
   );
