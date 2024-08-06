@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import CardGrid from "@/app/utility/cardgrid"
 
 const WhyParadise = () => {
   return (
@@ -12,8 +13,8 @@ const WhyParadise = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
         luctus nec ullamcorper mattis, pulvinar dapibus leo.
       </p>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-5 h-full py-5 md:py-10 px-[32px]">
-        <div className="w-full md:w-2/6 ">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-5 h-full py-5 md:py-10 px-[32px]">
+        <div className="w-full lg:w-2/6 ">
           <div className="p-4 bg-white rounded-lg">
             <Image
               className="w-full object-cover"
@@ -30,9 +31,9 @@ const WhyParadise = () => {
             </p>
           </div>
         </div>
-        <div className="w-full md:w-4/6">
+        <div className="w-full lg:w-4/6">
 
-
+<CardGrid/>
         </div>
       </div>
     </div>
