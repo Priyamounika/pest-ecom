@@ -3,7 +3,7 @@ import { FaBug, FaShieldAlt, FaLeaf, FaClock } from 'react-icons/fa';
 
 const CardGrid = () => {
   return (
-    <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 gap-16">
+    <div className="container mx-auto md:py-16 grid grid-cols-1 md:grid-cols-2 gap-16">
       <Card
         icon={FaBug}
         title="Fast Pest Removal"
