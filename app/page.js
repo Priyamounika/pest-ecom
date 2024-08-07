@@ -15,7 +15,6 @@ import MonthOffer from '@/app/utility/component/month-offfer'
 export default function Home() {
   return (
     <main className="bg-[#f3f3f3]">
-      <Header/>
       <Banner/>
       {/* section cards */}
       <Heading title={"Explore"} subtitle={"Our Category"}/>  
@@ -39,7 +38,6 @@ export default function Home() {
       {/* Testimonial cards */}
       <Testi/>
       <Faq/>
-      <Footer/>
     </main>
   );
 }

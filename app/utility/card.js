@@ -1,4 +1,5 @@
 import { FaBug, FaShieldAlt, FaLeaf, FaClock } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Card = ({ icon: Icon, title, description }) => {
   return (
