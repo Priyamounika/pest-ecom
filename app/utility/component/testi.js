@@ -44,6 +44,7 @@ const Testimonial = () => {
       categorySplide.current.go("+1");
     }
   };
+  
 
   return (
     <div className="relative w-full h-screen">
@@ -77,7 +78,7 @@ const Testimonial = () => {
           ipsum, nec sagittis sem nibh id elit.
         </p>
         {/* Slider */}
-        <div className="w-full max-w-5xl mx-auto splide-container">
+        <div className="w-full max-w-6xl mx-auto splide-container">
           <Splide
             ref={categorySplide}
             options={{
@@ -113,21 +114,21 @@ const Testimonial = () => {
           >
             {testimonials.map((testimonial, index) => (
               <SplideSlide key={index}>
-                <div className="relative p-8 rounded shadow-md px-4 flex flex-col items-start">
+                <div className="relative p-6 rounded shadow-md px-4 flex flex-col items-start">
                   <div className="flex items-start mb-4">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="w-[150px] h-[180px] mr-4 object-cover"
                     />
-                    <div className="py-4">
+                    <div className="py-2">
                       <h3 className="text-xl font-semibold">
                         {testimonial.name}
                       </h3>
                       <p className="text-sm text-[#FF3F35]">
                         {testimonial.role}
                       </p>
-                      <div className="flex mt-1 mb-4">
+                      <div className="flex mb-4 gap-1">
                         {Array.from({ length: testimonial.rating }).map(
                           (_, idx) => (
                             <span key={idx} className="text-yellow-400">
@@ -138,8 +139,8 @@ const Testimonial = () => {
                       </div>
                     </div>
                   </div>
-                  <p className="absolute bottom-0 left-[2rem] lg:left-[6.5rem] text-gray-600 text-center bg-white rounded-lg p-4">
-                    "{testimonial.text}"
+                  <p className="text-[15px] absolute bottom-10 left-[5rem] md:left[7rem] lg:left-[8rem] text-gray-600 bg-white rounded-lg p-3 w-[250px] md:w-[280px] lg:w-[400px]">
+                 "{testimonial.text.length > 80 ? `${testimonial.text.slice(0, 80)}...` : testimonial.text}"
                   </p>
                 </div>
               </SplideSlide>
