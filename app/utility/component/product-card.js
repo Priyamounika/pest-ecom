@@ -58,7 +58,7 @@ const ProductCard = () => {
       {isLoading ? (
         <SkeletonLoader />
       ) : (
-        <div className="bg-white rounded-xl shadow-md p-3 md:p-4 relative flex flex-col">
+        <div className="bg-white rounded-[26px] shadow-sm p-3 md:p-4 relative flex flex-col border border-[#eee]">
           {/* Discount Badge */}
           <div className="absolute top-0 left-8 bg-[#FF3F35] text-white text-xs font-bold px-2 py-2 rounded-b-lg">
             49%
@@ -81,7 +81,7 @@ const ProductCard = () => {
               alt="Oberon Insecticide"
               width={180}
               height={180}
-              className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-contain mx-auto cursor-pointer transition-transform duration-300 transform md:hover:translate-y-[-8px] hover:border-b-[1px] hover:border-b-[#fcb8b4]"
+              className="w-[120px] h-[120px] md:w-[190px] md:h-[190px] object-contain mx-auto cursor-pointer transition-transform duration-300 transform md:hover:translate-y-[-8px] hover:border-b-[2px] hover:border-b-[#fcb8b4]"
             />
           </div>
 
