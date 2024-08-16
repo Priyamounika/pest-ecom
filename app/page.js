@@ -10,6 +10,7 @@ import Heading from '@/app/utility/Heading'
 import SectionCard from '@/app/utility/component/section-card'
 import WhyParadise from '@/app/utility/component/why-paradise'
 import MonthOffer from '@/app/utility/component/month-offfer'
+import OurClient from '@/app/utility/component/ourclient'
 
 
 export default function Home() {
@@ -31,6 +32,9 @@ export default function Home() {
       <ProductCard/>
       <ProductCard/>
       <ProductCard/>
+      </div>
+      <div className="py-10">
+      <OurClient/>
       </div>
       {/* Why Paradise */}
       <WhyParadise/>
